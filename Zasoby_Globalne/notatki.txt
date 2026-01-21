@@ -1,0 +1,23 @@
+W node.js jest tzw. zestaw obiektów które mają charakter globalny w praktyce to oznacza dostęp do poszczególnych modułów bez potrzeby
+ich dołączania czy osobnej instalacji. 
+
+1.Do zasobów globalnych zalicza się:
+a) zmienne dirname oraz filename
+b) funkcje należące do modułu Timers
+c) klase console, obiekt Console
+d) obiekt Process
+e) klasa Buffer
+
+2. Zmienna dirname i filename są to zmienne globalne:
+a) wyświetlanie nazwy katalogu (ze ścieżką) w którym jest zapisany skrypt
+    console.log("nazwa katalogu ze ścieżką ", _dirname);
+b) wyświetlanie nazwy pliku (ze ścieżką) który zawiera plik:
+    console.log("nazwa pliku ze ścieżką ", _filename);
+
+ćw. 1
+Wyodrębnij z łańcucha który jest rezultatem użycia zmiennej _filename nazwę pliku zawierający wykonany plik
+
+3. Moduł Timers to moduł który zawiera zestaw funkcji w którym zawsze jednym z argumentów jest funkcja zwrotna (callback)
+    funkcje wchodzące w skład modułu to:
+    a) Wykonanie określonego kodu funckcji zwrotnej po upływie interwału czasu - setTimeout()
+    b) Cykliczne wywołanie funkcji zwrotnej zgodnie z zadanym interwałem czasowym - setInterval()
