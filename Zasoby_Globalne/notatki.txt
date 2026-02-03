@@ -21,3 +21,4 @@ Wyodrębnij z łańcucha który jest rezultatem użycia zmiennej _filename nazw�
     funkcje wchodzące w skład modułu to:
     a) Wykonanie określonego kodu funckcji zwrotnej po upływie interwału czasu - setTimeout()
     b) Cykliczne wywołanie funkcji zwrotnej zgodnie z zadanym interwałem czasowym - setInterval()
+    c) Wywołanie funkcji zwrotnej po zakończeniu wywołania wszystkich synchronicznych operacji w kodzie - SetImmediate()

@@ -1,6 +1,14 @@
-for(let i = 1; i <=10; i++)
+let x = 0
+function odliczanie()
 {
-    setTimeout(()=>{
-        console.log(i)
-    }, 1000 * i);
+    if(x==10)
+    {
+        clearInterval(this);
+    }
+    console.log(x++);
 }
+
+const timer = setInterval(
+    odliczanie,
+    1000
+)

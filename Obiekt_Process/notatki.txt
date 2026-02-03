@@ -1,0 +1,6 @@
+1. Obiekt process jest uzyskany do otrzymania informacji o wybranym procesie, architekturze procesora, systemie operacyjnym itp.
+    Można też używać tego obiektu do pobierania danych ze standardowego wejscia (STDIN) oraz wyświetlania zadanych informacji
+    na wyjsciu (process.STDOUT) jak również wyświetlaniu informacji o błędach (STDERR).
+    Obiekt process jest instancją klasy eventEmmiter
+
+    sprawdz zastosowanie i zrobic globalnie
