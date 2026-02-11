@@ -1,10 +1,22 @@
-const buffer1 = buffer1.alloc(16);
-buffer1.write("Pontiac Firebird");
-const buffer2 = buffer1.alloc(16);
-buffer2.write(buffer1.toString());
+const buffer1 = Buffer.alloc(26);
 
-//
-const buffer4a = new buffer1("Ford");
-const buffer4b = new buffer1(" ");
-const buffer4c = new buffer1("Mustang");
-const buffer4 = buffer4a.concat([buffer4a, buffer4b, buffer4c]);
+buffer1.forEach((_, i, buf) => 
+{ 
+    buf[i] = i + 97; 
+});
+
+buffer1.forEach(item =>
+{ 
+    console.log(item); 
+});
+
+console.log("buffer1.toString() = ", buffer1.toString());
+
+const buffer2 = Buffer.alloc(26);
+
+buffer2.forEach((_, index, buf) => 
+{ 
+    buf[index] = index + 65; 
+});
+
+console.log("buffer2.toString() = ", buffer2.toString());
